@@ -1,3 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-cat /etc/nginx/sites-available/default
+cp ./config/travis_nginx.conf /etc/nginx/nginx.conf
+/etc/init.d/nginx restart
